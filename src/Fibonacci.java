@@ -1,26 +1,25 @@
 public class Fibonacci {
 
 
-    // Driver Code
     public static void main(String args[])
     {
         // Llamar a la función
-        Fibonacci(10);
+        Fibonacci(20);
     }
 
     static void Fibonacci(int numero)
     {
-        int num1 = 0, num2 = 1;
+        int first_num = 0, second_num = 1;
 
         int counter = 0;
 
         while (counter < numero) {
 
-            System.out.print(num1 + " ");
+            System.out.print(first_num + " ");
 
-            int num3 = num2 + num1;
-            num1 = num2;
-            num2 = num3;
+            int num3 = second_num + first_num;
+            first_num = second_num;
+            second_num = num3;
             counter = counter + 1;
         }
     }
