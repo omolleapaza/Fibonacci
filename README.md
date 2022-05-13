@@ -42,7 +42,10 @@ static int FibonacciRecursivo(int numero){
     }
 </pre>
 
-Author: Oscar Molleapaza Flores
-- Estudiante del IV Semestre de Ingeniería de Software
-
+- Lenguaje: Java
+- IDE: JetBrains IntelliJ
+- Author: Oscar Molleapaza Flores
+- Semestre: IV
+- Carrera: Ingeniería de Software
+- Universidad De La Salle - Arequipa
 
