@@ -3,8 +3,8 @@ public class Fibonacci {
 
     public static void main(String args[])
     {
-        int numTemp = 5;
-
+        
+        int numTemp = 10;
         long start1 = System.nanoTime();
         Fibonacci(numTemp);
         long end1 = System.nanoTime();
