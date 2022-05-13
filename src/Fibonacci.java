@@ -5,15 +5,14 @@ public class Fibonacci {
     {
 
         int numTemp = 10;
-        /*
+
         long start1 = System.nanoTime();
         Fibonacci(numTemp);
         long end1 = System.nanoTime();
-        System.out.println("Elapsed Time in nano seconds: "+ (end1-start1));
+        System.out.println("Elapsed Time in nano seconds Fibonacci Recursive: "+ (end1-start1));
 
         System.out.println("");
-        
-         */
+
         long start2 = System.nanoTime();
         for(int i=0; i<numTemp; i++){
             int fibonacciNumber = FibonacciRecursivo(i);
@@ -21,7 +20,7 @@ public class Fibonacci {
         }
         long end2 = System.nanoTime();
 
-        System.out.println("Elapsed Time in nano seconds: "+ (end2-start2));
+        System.out.println("Elapsed Time in nano seconds Fibonacci Iterative: "+ (end2-start2));
 
 
     }
