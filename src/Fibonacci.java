@@ -3,8 +3,24 @@ public class Fibonacci {
 
     public static void main(String args[])
     {
-        // Llamar a la función
-        Fibonacci(20);
+        int numTemp = 5;
+
+        long start1 = System.nanoTime();
+        Fibonacci(numTemp);
+        long end1 = System.nanoTime();
+        System.out.println("Elapsed Time in nano seconds: "+ (end1-start1));
+        /*
+        System.out.println("");
+        long start2 = System.nanoTime();
+        for(int i=0; i<numTemp; i++){
+            int fibonacciNumber = FibonacciRecursivo(i);
+            System.out.print(" " + fibonacciNumber);
+        }
+        long end2 = System.nanoTime();
+
+        System.out.println("Elapsed Time in nano seconds: "+ (end2-start2));
+
+         */
     }
 
     static void Fibonacci(int numero)
@@ -21,6 +37,15 @@ public class Fibonacci {
             first_num = second_num;
             second_num = num3;
             counter = counter + 1;
+        }
+    }
+
+    static int FibonacciRecursivo(int numero){
+        if(numero > 1){
+            return FibonacciRecursivo(numero-1) + FibonacciRecursivo(numero-2);
+        }else{
+            if(numero == 1 ) return 1;
+            else return 0;
         }
     }
 }
